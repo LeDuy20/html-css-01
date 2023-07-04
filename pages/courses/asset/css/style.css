@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.6rem;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+:root {
+    --primary-color: #032e32;
+}
+/* Courses */
+.courses {
+    padding: 70px 0;
+    background: #e0eae5;
+}
+.courses-body {
+    display: flex;
+    align-items: center;
+}
+.courses__heading {
+    width: 570px;
+    font-weight: 800;
+    line-height: 52px;
+    color: var(--primary-color);
+    font-size: 42px;
+}
+.courses__desc {
+    width: 570px;
+    margin-top: 20px;
+    line-height: 30px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.courses__pricing {
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+.courses-info {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.courses__qty {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.courses__heading-learn {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+.courses__all {
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.courses__all + .courses__all {
+    margin-top: 16px;
+}
+.courses__all::before {
+    content: url(../icon/check.svg);
+    margin-right: 12px;
+}
+.courses-action {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 20px;
+}
+.courses__btn {
+    padding: 15px 35px;
+    border-radius: 8px;
+    background: #b5ed3d;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.courses__btn:nth-child(2) {
+    background: #032e32;
+    color: #FFF;
+}
+.courses__btn:hover {
+    opacity: 0.9;
+}
+.courses-media {
+    margin-left: 80px;
+}
+.courses-img-wrap {
+    position: relative;
+    z-index: 1;
+}
+.courses__decor {
+    position: absolute;
+    top: 104px;
+    left: -50px;
+    z-index: -1;
+}
+.courses__delete {
+    position: absolute;
+    top: -107px;
+    right: 0;
+}

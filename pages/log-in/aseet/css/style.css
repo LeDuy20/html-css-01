@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(to right, #04704e 50%, #d4dddd 50%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.6rem;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Log in */
+.login-body {
+    display: flex;
+    align-items: center;
+}
+.login-content {
+    width: 50%;
+}
+.login-media {
+    padding: 126px 0 70px 115px;
+}
+.login__heading {
+    position: relative;
+    width: 470px;
+    font-weight: 800;
+    line-height: 52px;
+    color: #fff;
+    font-size: 4.2rem;
+}
+.login__heading::before {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 4px;
+    border-radius: 12px;
+    background: #b5ed3d;
+    top: -20px;
+}
+.login__desc {
+    width: 411px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.login-card {
+    position: relative;
+    padding: 38px 28px;
+    border-radius: 12px;
+    background: #fff;
+}
+.form-label,
+.form-input {
+    display: block;
+}
+.form-label {
+    font-weight: 600;
+    line-height: 28px;
+    color: #032e32;
+    font-size: 1.6rem;
+}
+.form-group + .form-group {
+    margin-top: 26px;
+}
+.form-input {
+    margin-top: 20px;
+    width: 414px;
+    padding: 17px;
+    border-radius: 6px;
+    border: 1px solid #d4dddd;
+    color: #4f5a5a;
+    font-size: 1.6rem;
+}
+.login-forgot {
+    position: relative;
+    margin-right: 17px;
+    color: #032e32;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 600;
+    top: -32px;
+}
+.form-btn {
+    margin-top: 40px;
+    display: inline-block;
+    width: 414px;
+    height: 62px;
+    border-radius: 6px;
+    background: #b5ed3d;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #032e32;
+    font-size: 1.6rem;
+}
+.form-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.login-or {
+    position: relative;
+    margin-top: 18px;
+    text-align: center;
+    color: #4f5a5a;
+    font-size: 1.6rem;
+}
+.login-or::before,
+.login-or::after {
+    position: absolute;
+    content: "";
+    width: 172px;
+    height: 1px;
+    background: #d4dddd;
+}
+.login-or::before {
+    left: 0;
+    top: 10px;
+}
+.login-or::after {
+    right: 0;
+    top: 10px;
+}
+.card-google {
+    padding: 11px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 13px;
+    width: 255px;
+    border-radius: 6px;
+    border: 1px solid #d4dddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-google:hover {
+    cursor: pointer;
+}
+.card__account,
+.card__text {
+    color: #4f5a5a;
+    font-size: 1.6rem;
+}
+.card-signup {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+.card__signup {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #032e32;
+}
+.card__signup:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-delete {
+    position: absolute;
+    top: 28px;
+    right: 100px;
+}
