@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <!-- link -->
+    <link rel="stylesheet" href="./asset/css/reset.css" />
+    <link rel="stylesheet" href="./pages/contact/asset/css/style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <!-- Logo -->
+          <img src="./asset/icon/Logo.svg" alt="" class="header__logo" />
+          <!-- Navbar -->
+          <div class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="./index.html" class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./aboutus.html" class="navbar-link">About Us</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./Resources.html" class="navbar-link">Resources</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link header__active">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Action -->
+          <div class="header-action">
+            <a href="./pages/log-in/login.html" class="header__btn-login"
+              >Log in</a
+            >
+            <a
+              href="./pages/sign-up/sign-up.html"
+              class="btn header__btn-signup"
+              >Sign up</a
+            >
+          </div>
+        </div>
+        <!-- Hero -->
+        <div class="hero">
+          <h1 class="hero__heading">Let’s talk with us easily</h1>
+          <!-- contact form -->
+          <div class="contact-form">
+            <form
+              method="post"
+              action="https://api-gateway.fullstack.edu.vn/action_page.php"
+              autocapitalize="off"
+              id="form-1"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name" class="form-label">
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      class="form-input"
+                      placeholder="Your first name"
+                      required
+                      minlength="2"
+                    />
+                  </label>
+                  <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="last-name" class="form-label">
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      class="form-input"
+                      placeholder="Your last name"
+                      required
+                      minlength="1"
+                    />
+                  </label>
+                  <span class="form-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-input"
+                      placeholder="Your email address"
+                      required
+                    />
+                  </label>
+                  <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-input"
+                      placeholder="Your password"
+                      required
+                    />
+                  </label>
+                  <span class="form-error"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="" class="radio-label"> I want to learn </label>
+                  <div class="radio-group">
+                    <div class="radio-btn">
+                      <input type="radio" name="type" id="design" required />
+                      <label for="design">Design</label>
+                    </div>
+
+                    <div class="radio-btn">
+                      <input
+                        type="radio"
+                        name="type"
+                        id="development"
+                        required
+                      />
+                      <label for="development">Development</label>
+                    </div>
+
+                    <div class="radio-btn">
+                      <input type="radio" name="type" id="marketing" required />
+                      <label for="marketing">Marketing</label>
+                    </div>
+
+                    <div class="radio-btn">
+                      <input type="radio" name="type" id="Other" required />
+                      <label for="Other">Other</label>
+                    </div>
+                  </div>
+
+                  <span class="form-error"></span>
+                </div>
+              </div>
+              <div class="form-row-bottom">
+                <div class="from-group">
+                  <label for="textarea" class="form-label">
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-textarea"
+                      placeholder="Write your messages"
+                      oninput="onResize(this)"
+                      required
+                      minlength="10"
+                    ></textarea>
+                  </label>
+                  <span class="form-error"></span>
+                </div>
+              </div>
+              <button class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- GTA -->
+    <section class="GTA">
+      <div class="container">
+        <div class="GTA-body">
+          <div class="GTA-avatar-group">
+            <img src="./asset/img/GTA-01.jpg" alt="" class="GTA__avatar" />
+            <img src="./asset/img/GTA-02.jpg" alt="" class="GTA__avatar" />
+            <img src="./asset/img/GTA-03.jpg" alt="" class="GTA__avatar" />
+            <img src="./asset/img/GTA-04.jpg" alt="" class="GTA__avatar" />
+            <img src="./asset/img/GTA-05.jpg" alt="" class="GTA__avatar" />
+            <img src="./asset/img/GTA-06.jpg" alt="" class="GTA__avatar" />
+          </div>
+          <div class="GTA-inner">
+            <h2 class="section-heading GTA__heading">
+              More that 1M+ successful students
+            </h2>
+            <p class="section-desc GTA__desc">
+              Circuit is flexible and affordable and offers you exceptional
+              support to achieve your career goals.
+            </p>
+            <a href="#!" class="GTA__btn">Get Started</a>
+          </div>
+          <div class="GTA-decors">
+            <img src="./asset/icon/GTA-01.svg" alt="" class="GTA__decor" />
+            <img src="./asset/icon/GTA-01.svg" alt="" class="GTA__decor" />
+            <img src="./asset/icon/GTA-02.svg" alt="" class="GTA__decor" />
+            <img src="./asset/icon/GTA-02.svg" alt="" class="GTA__decor" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-body">
+          <!-- footer list 1 -->
+          <ul class="footer-list">
+            <h3 class="footer__heading">Courses</h3>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Classroom Courses</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Virtual Classroom Courses</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">E-Learning Courses</a>
+            </li>
+          </ul>
+          <!-- footer list 2 -->
+          <ul class="footer-list">
+            <h3 class="footer__heading">Circuit</h3>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">About us</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Why Circuit</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Testimonials</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Promotions</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Blog</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Podcasts</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Forum</a>
+            </li>
+          </ul>
+          <!-- footer list 3 -->
+          <ul class="footer-list">
+            <h3 class="footer__heading">Help</h3>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Contact us</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">Our Venues</a>
+            </li>
+            <li class="footer-item">
+              <a href="#!" class="footer-link">My account</a>
+            </li>
+          </ul>
+          <div class="footer-list">
+            <h3 class="footer__heading">Newsletter</h3>
+            <form action="" class="subscribe-form">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="email address"
+                class="subscribe-form__input"
+              />
+              <button class="btn subscribe-form__btn">Subscribe</button>
+            </form>
+            <div class="footer-info">
+              <div class="footer__email-uss">
+                <p class="footer-title">Email us</p>
+                <p class="footer__email">email@gmail.com</p>
+              </div>
+              <div class="footer__call-uss">
+                <p class="footer-title">Call us</p>
+                <p class="footer__call">000 1234 5678</p>
+              </div>
+            </div>
+            <div class="footer-social-list">
+              <img
+                src="./asset/icon/fb.svg"
+                alt=""
+                class="footer__social-link"
+              />
+              <img
+                src="./asset/icon/inta.svg"
+                alt=""
+                class="footer__social-link"
+              />
+              <img
+                src="./asset/icon/twi.svg"
+                alt=""
+                class="footer__social-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <img
+            src="./asset/icon/Logo.svg "
+            alt=""
+            class="footer-copyright__logo"
+          />
+          <div class="footer-copyright__social-list">
+            <img
+              src="./asset/icon/footer-01.svg"
+              alt=""
+              class="footer-copyright__social-link"
+            />
+            <img
+              src="./asset/icon/footer-02.svg"
+              alt=""
+              class="footer-copyright__social-link"
+            />
+            <img
+              src="./asset/icon/footer-03.svg"
+              alt=""
+              class="footer-copyright__social-link"
+            />
+          </div>
+          <p class="footer-copyright__text">
+            Copyright © 2022 UIHUT all rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./pages/contact/main.js"></script>
+    <script>
+      Validator({
+        form: "#form-1",
+        formGroupSelector: ".from-group",
+        errorSelector: ".form-error",
+        rules: [
+          Validator.isRequired("#first-name"),
+          Validator.isRequired("#last-name"),
+          Validator.isRequired('input[name="type"]'),
+          Validator.isEmail("#email"),
+          Validator.minLength("#password", 6),
+          Validator.message("#message", 10),
+        ],
+      });
+    </script>
+  </body>
+</html>
